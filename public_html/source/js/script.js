@@ -2,7 +2,7 @@ $(document).ready(function () {
   function mobileViewUpdate() {
     const viewportWidth = $(window).width();
     const nav = $(".navbar.fixed-top");
-    if (viewportWidth < 600) {
+    if (viewportWidth <= 768) {
       nav.addClass("scrolled");
     } else {
       $(document).scroll(function () {
